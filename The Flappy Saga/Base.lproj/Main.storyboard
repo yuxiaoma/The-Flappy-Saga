@@ -53,7 +53,6 @@
         <!--Game-->
         <scene sceneID="P8d-hp-qWZ">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qCx-gw-mus" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="DeV-Pn-PIN" customClass="Game" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="A9Y-Ld-H90"/>
@@ -63,10 +62,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Island.gif" translatesAutoresizingMaskIntoConstraints="NO" id="InV-Xd-LpV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Island.gif" translatesAutoresizingMaskIntoConstraints="NO" id="InV-Xd-LpV">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="144182766935997.gif" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-9r-LEb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wukong.gif" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-9r-LEb">
                                 <rect key="frame" x="79" y="262" width="58" height="75"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvA-Wu-qWY">
@@ -82,19 +81,26 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1Mg-b1-5tT" firstAttribute="top" secondItem="InV-Xd-LpV" secondAttribute="bottom" id="QyX-Kt-TVc"/>
+                            <constraint firstItem="InV-Xd-LpV" firstAttribute="leading" secondItem="MLK-8k-Ftd" secondAttribute="leading" id="Riu-Js-uqv"/>
+                            <constraint firstAttribute="trailing" secondItem="InV-Xd-LpV" secondAttribute="trailing" id="VIh-zO-5dI"/>
+                            <constraint firstItem="InV-Xd-LpV" firstAttribute="top" secondItem="MLK-8k-Ftd" secondAttribute="top" id="h5n-Kl-iYw"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Saga" destination="O4w-9r-LEb" id="kQh-bS-qJD"/>
                         <outlet property="Start" destination="fvA-Wu-qWY" id="gCS-JW-DiN"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qCx-gw-mus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1178" y="309"/>
         </scene>
     </scenes>
     <resources>
-        <image name="144182766935997.gif" width="366" height="454"/>
         <image name="Dragonball-Tournament.gif" width="506" height="439"/>
         <image name="Island.gif" width="512" height="511"/>
+        <image name="wukong.gif" width="366" height="454"/>
     </resources>
 </document>

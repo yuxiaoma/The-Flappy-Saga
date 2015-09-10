@@ -18,13 +18,34 @@
     
     Start.hidden = YES;
     
-    SagaMovement = [NSTimer scheduledTimerWithTimeInterval:0.50 target:self selector:@selector(SagaMoving) userInfo:nil repeats:YES];
+    SagaMovement = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(SagaMoving) userInfo:nil repeats:YES];
 }
 
 -(void)SagaMoving{
     
     Saga.center = CGPointMake(Saga.center.x, Saga.center.y - SagaFlight);
     
+    //Saga will move down in a constant rate of 5 pixel.
+    SagaFlight = SagaFlight - 5;
+    
+    if (SagaFlight < -15) {
+        SagaFlight = -15;
+    }
+    
+    //Saga is moving upward, show upward saga image (useless for now)
+    if (SagaFlight > 0) {
+        Saga.image = [UIImage imageNamed:@"wukong.gif"];
+    }
+    //Saga is moving upward, show updown saga image
+    if (SagaFlight < 0) {
+        Saga.image = [UIImage imageNamed:@"wukong.gif"];
+    }
+    
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    
+    SagaFlight = 30;
 }
 
 - (void)viewDidLoad {

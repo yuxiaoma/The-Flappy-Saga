@@ -14,7 +14,7 @@
 		11E9321A1BA0B88B006C523D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11E932191BA0B88B006C523D /* Images.xcassets */; };
 		11E9321D1BA0B88B006C523D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11E9321B1BA0B88B006C523D /* LaunchScreen.xib */; };
 		11E932291BA0B88B006C523D /* The_Flappy_SagaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E932281BA0B88B006C523D /* The_Flappy_SagaTests.m */; };
-		11E932351BA0C298006C523D /* 144182766935997.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E932341BA0C297006C523D /* 144182766935997.gif */; };
+		11E932351BA0C298006C523D /* wukong.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E932341BA0C297006C523D /* wukong.gif */; };
 		11E932371BA0C2DA006C523D /* Island.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E932361BA0C2DA006C523D /* Island.gif */; };
 		11E932391BA0C2E0006C523D /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = 11E932381BA0C2E0006C523D /* bg3.png */; };
 		11E9323B1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 11E9323A1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png */; };
@@ -46,7 +46,7 @@
 		11E932221BA0B88B006C523D /* The Flappy SagaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "The Flappy SagaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E932271BA0B88B006C523D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11E932281BA0B88B006C523D /* The_Flappy_SagaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = The_Flappy_SagaTests.m; sourceTree = "<group>"; };
-		11E932341BA0C297006C523D /* 144182766935997.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 144182766935997.gif; sourceTree = "<group>"; };
+		11E932341BA0C297006C523D /* wukong.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wukong.gif; sourceTree = "<group>"; };
 		11E932361BA0C2DA006C523D /* Island.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Island.gif; sourceTree = "<group>"; };
 		11E932381BA0C2E0006C523D /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg3.png; sourceTree = "<group>"; };
 		11E9323A1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2015-09-09 at 3.42.53 PM.png"; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 				11E9323C1BA0C3C5006C523D /* Dragonball-Tournament.gif */,
 				11E932381BA0C2E0006C523D /* bg3.png */,
 				11E932361BA0C2DA006C523D /* Island.gif */,
-				11E932341BA0C297006C523D /* 144182766935997.gif */,
+				11E932341BA0C297006C523D /* wukong.gif */,
 				11E9320D1BA0B88B006C523D /* Info.plist */,
 				11E9320E1BA0B88B006C523D /* main.m */,
 			);
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E932391BA0C2E0006C523D /* bg3.png in Resources */,
-				11E932351BA0C298006C523D /* 144182766935997.gif in Resources */,
+				11E932351BA0C298006C523D /* wukong.gif in Resources */,
 				11E932371BA0C2DA006C523D /* Island.gif in Resources */,
 				11E932181BA0B88B006C523D /* Main.storyboard in Resources */,
 				11E9323B1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png in Resources */,

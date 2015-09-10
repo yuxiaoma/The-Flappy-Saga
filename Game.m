@@ -14,6 +14,19 @@
 
 @implementation Game
 
+-(IBAction)Start:(id)sender{
+    
+    Start.hidden = YES;
+    
+    SagaMovement = [NSTimer scheduledTimerWithTimeInterval:0.50 target:self selector:@selector(SagaMoving) userInfo:nil repeats:YES];
+}
+
+-(void)SagaMoving{
+    
+    Saga.center = CGPointMake(Saga.center.x, Saga.center.y - SagaFlight);
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

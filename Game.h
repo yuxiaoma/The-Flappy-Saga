@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+int SagaFlight;
+
 @interface Game : UIViewController
+{
+    IBOutlet UIImageView *Saga;
+    IBOutlet UIButton *Start;
+    
+    NSTimer *SagaMovement;
+}
+
+-(IBAction)Start:(id)sender;
+-(void)SagaMoving;
 
 @end

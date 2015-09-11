@@ -20,6 +20,7 @@
 		11E9323B1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 11E9323A1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png */; };
 		11E9323D1BA0C3C5006C523D /* Dragonball-Tournament.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E9323C1BA0C3C5006C523D /* Dragonball-Tournament.gif */; };
 		11E932431BA0C923006C523D /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E932421BA0C923006C523D /* Game.m */; };
+		11E932451BA21508006C523D /* obstacle.gif in Resources */ = {isa = PBXBuildFile; fileRef = 11E932441BA21508006C523D /* obstacle.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		11E9323C1BA0C3C5006C523D /* Dragonball-Tournament.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Dragonball-Tournament.gif"; sourceTree = "<group>"; };
 		11E932411BA0C923006C523D /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
 		11E932421BA0C923006C523D /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
+		11E932441BA21508006C523D /* obstacle.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = obstacle.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		11E9320C1BA0B88B006C523D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11E932441BA21508006C523D /* obstacle.gif */,
 				11E9323A1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png */,
 				11E9323C1BA0C3C5006C523D /* Dragonball-Tournament.gif */,
 				11E932381BA0C2E0006C523D /* bg3.png */,
@@ -224,6 +227,7 @@
 				11E932371BA0C2DA006C523D /* Island.gif in Resources */,
 				11E932181BA0B88B006C523D /* Main.storyboard in Resources */,
 				11E9323B1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png in Resources */,
+				11E932451BA21508006C523D /* obstacle.gif in Resources */,
 				11E9323D1BA0C3C5006C523D /* Dragonball-Tournament.gif in Resources */,
 				11E9321D1BA0B88B006C523D /* LaunchScreen.xib in Resources */,
 				11E9321A1BA0B88B006C523D /* Images.xcassets in Resources */,

@@ -67,7 +67,7 @@
                                 <rect key="frame" x="0.0" y="-178" width="568" height="498"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wukong.gif" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-9r-LEb">
-                                <rect key="frame" x="64" y="122" width="58" height="76"/>
+                                <rect key="frame" x="44" y="122" width="58" height="76"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvA-Wu-qWY">
                                 <rect key="frame" x="242" y="134" width="84" height="51"/>
@@ -80,23 +80,40 @@
                                     <action selector="Start:" destination="DeV-Pn-PIN" eventType="touchUpInside" id="sSV-MW-4ki"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-pR-JH6">
+                                <rect key="frame" x="533" y="78" width="35" height="255"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-KD-Hzo">
+                                <rect key="frame" x="0.0" y="306" width="578" height="14"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uiz-B2-5d3">
+                                <rect key="frame" x="-5" y="6" width="578" height="27"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-P6-xx1">
+                                <rect key="frame" x="477" y="-70" width="35" height="255"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="Bottom" destination="Tit-KD-Hzo" id="5D8-Jg-6Sc"/>
+                        <outlet property="BottomObstacle" destination="tFh-pR-JH6" id="WTu-6m-R8a"/>
                         <outlet property="Saga" destination="O4w-9r-LEb" id="kQh-bS-qJD"/>
                         <outlet property="Start" destination="fvA-Wu-qWY" id="gCS-JW-DiN"/>
+                        <outlet property="Top" destination="uiz-B2-5d3" id="h8y-cE-rSN"/>
+                        <outlet property="TopObstacle" destination="Xsf-P6-xx1" id="oQM-iq-sD1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCx-gw-mus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="572" y="112"/>
+            <point key="canvasLocation" x="580" y="112"/>
         </scene>
     </scenes>
     <resources>
         <image name="Dragonball-Tournament.gif" width="506" height="439"/>
         <image name="Island.gif" width="512" height="511"/>
+        <image name="obstacle.gif" width="56" height="474"/>
         <image name="wukong.gif" width="366" height="454"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

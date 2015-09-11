@@ -19,6 +19,33 @@
     Start.hidden = YES;
     
     SagaMovement = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(SagaMoving) userInfo:nil repeats:YES];
+    
+    [self PlaceObstacle];
+    
+    ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstacleMoving) userInfo:nil repeats:YES];
+}
+
+//Moving and regenerate the obstacles
+-(void)ObstacleMoving{
+    TopObstacle.center = CGPointMake(TopObstacle.center.x - 1, TopObstacle.center.y);
+    BottomObstacle.center = CGPointMake(BottomObstacle.center.x - 1, BottomObstacle.center.y);
+    
+    if (TopObstacle.center.x < -35){
+        [self PlaceObstacle];
+    }
+}
+
+//Place the top and bottom obstacle in random position off the screen
+-(void)PlaceObstacle{
+    //Set top obstacle to random y position between -60 to -200
+    int lowerBound = -200;
+    int upperBound = -60;
+    RandomTopPos = lowerBound + arc4random() % (upperBound - lowerBound);
+    
+    RandomBotPos = RandomTopPos + 90;
+    
+    TopObstacle.center = CGPointMake(570, RandomTopPos);
+    BottomObstacle.center =CGPointMake(570, RandomBotPos);
 }
 
 -(void)SagaMoving{

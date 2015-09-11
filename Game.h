@@ -9,16 +9,25 @@
 #import <UIKit/UIKit.h>
 
 int SagaFlight;
+int RandomTopPos;
+int RandomBotPos;
 
 @interface Game : UIViewController
 {
     IBOutlet UIImageView *Saga;
     IBOutlet UIButton *Start;
+    IBOutlet UIImageView *TopObstacle;
+    IBOutlet UIImageView *BottomObstacle;
+    IBOutlet UIImageView *Top;
+    IBOutlet UIImageView *Bottom;
     
     NSTimer *SagaMovement;
+    NSTimer *ObstacleMovement;
 }
 
 -(IBAction)Start:(id)sender;
 -(void)SagaMoving;
+-(void)ObstacleMoving;
+-(void)PlaceObstacle;
 
 @end

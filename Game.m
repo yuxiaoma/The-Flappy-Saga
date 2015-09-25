@@ -74,12 +74,13 @@
 //Place the top and bottom obstacle in random position off the screen
 -(void)PlaceObstacle{
     //Set top obstacle to random y position between lowerBound and upperBound
-    int lowerBound = -40;
+    int lowerBound = -20;
     int upperBound = 50;
     RandomTopPos = lowerBound + arc4random() % (upperBound - lowerBound);
     
-    RandomBotPos = RandomTopPos + 80;
-    
+    RandomBotPos = RandomTopPos + 350;
+    printf("%i\n", RandomTopPos);
+    printf("%i\n", RandomBotPos);
     TopObstacle.center = CGPointMake(570, RandomTopPos);
     BottomObstacle.center =CGPointMake(570, RandomBotPos);
 }
@@ -89,7 +90,7 @@
     Saga.center = CGPointMake(Saga.center.x, Saga.center.y - SagaFlight);
     
     //Saga will move down in a constant rate of 5 pixel.
-    SagaFlight = SagaFlight - 5;
+    SagaFlight = SagaFlight - 2;
     
     if (SagaFlight < -15) {
         SagaFlight = -15;
@@ -108,7 +109,7 @@
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     
-    SagaFlight = 30;
+    SagaFlight = 10;
 }
 
 - (void)viewDidLoad {

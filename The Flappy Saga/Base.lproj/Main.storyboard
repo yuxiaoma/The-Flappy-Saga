@@ -72,11 +72,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wukong.gif" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-9r-LEb">
                                 <rect key="frame" x="77" y="122" width="58" height="76"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-pR-JH6">
-                                <rect key="frame" x="481" y="171" width="35" height="200"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-P6-xx1">
-                                <rect key="frame" x="481" y="-96" width="35" height="231"/>
+                                <rect key="frame" x="481" y="-121" width="35" height="231"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-KD-Hzo">
                                 <rect key="frame" x="0.0" y="306" width="578" height="14"/>
@@ -111,6 +108,9 @@
                                     <segue destination="BYZ-38-t0r" kind="modal" id="GEE-Lt-ls4"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-pR-JH6">
+                                <rect key="frame" x="481" y="198" width="35" height="200"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

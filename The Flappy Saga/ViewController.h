@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-NSInteger HighScoreNum;
+NSInteger HighScoreNumView;
 
 @interface ViewController : UIViewController
 {

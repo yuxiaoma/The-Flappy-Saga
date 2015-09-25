@@ -33,12 +33,19 @@
 }
 
 -(void)GameOver{
+    
+    if (ScoreNumber > HighScoreNum){
+        [[NSUserDefaults standardUserDefaults] setInteger:ScoreNumber forKey:@"HighScoreSaved"];
+    }
+    
     [ObstacleMovement invalidate];
     [SagaMovement invalidate];
     
     Exit.hidden = NO;
     TopObstacle.hidden = YES;
     BottomObstacle.hidden = YES;
+    Saga.hidden = YES;
+    
 }
 
 //Moving and regenerate the obstacles
@@ -62,13 +69,6 @@
         [self GameOver];
     }
     
-    if (CGRectIntersectsRect(Saga.frame, Top.frame)){
-        [self GameOver];
-    }
-    
-    if (CGRectIntersectsRect(Saga.frame, Bottom.frame)){
-        [self GameOver];
-    }
 }
 
 //Place the top and bottom obstacle in random position off the screen
@@ -118,6 +118,8 @@
     
     Exit.hidden = YES;
     ScoreNumber = 0;
+    
+    HighScoreNum = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

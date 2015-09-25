@@ -46,6 +46,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="HighScore" destination="KmI-4b-Qgb" id="3g3-0I-q1h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -72,6 +75,9 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-pR-JH6">
                                 <rect key="frame" x="481" y="171" width="35" height="200"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-P6-xx1">
+                                <rect key="frame" x="481" y="-96" width="35" height="231"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-KD-Hzo">
                                 <rect key="frame" x="0.0" y="306" width="578" height="14"/>
                             </imageView>
@@ -79,7 +85,7 @@
                                 <rect key="frame" x="-5" y="6" width="578" height="27"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAE-wB-BLH">
-                                <rect key="frame" x="458" y="41" width="49" height="27"/>
+                                <rect key="frame" x="36" y="41" width="49" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -96,15 +102,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-oJ-hKH">
-                                <rect key="frame" x="269" y="84" width="30" height="30"/>
+                                <rect key="frame" x="253" y="84" width="62" height="36"/>
                                 <state key="normal" title="Exit">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="GEE-Lt-ls4"/>
+                                </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-P6-xx1">
-                                <rect key="frame" x="60" y="-117" width="35" height="231"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -122,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCx-gw-mus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="575" y="112"/>
+            <point key="canvasLocation" x="618" y="112"/>
         </scene>
     </scenes>
     <resources>

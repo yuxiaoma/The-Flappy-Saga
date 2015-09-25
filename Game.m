@@ -17,12 +17,28 @@
 -(IBAction)Start:(id)sender{
     
     Start.hidden = YES;
+    TopObstacle.hidden = NO;
+    BottomObstacle.hidden = NO;
     
     SagaMovement = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(SagaMoving) userInfo:nil repeats:YES];
     
     [self PlaceObstacle];
     
     ObstacleMovement = [NSTimer scheduledTimerWithTimeInterval:0.01 target:self selector:@selector(ObstacleMoving) userInfo:nil repeats:YES];
+}
+
+-(void)Score{
+    ScoreNumber += 1;
+    ScoreLabel.text =[NSString stringWithFormat:@"%i", ScoreNumber];
+}
+
+-(void)GameOver{
+    [ObstacleMovement invalidate];
+    [SagaMovement invalidate];
+    
+    Exit.hidden = NO;
+    TopObstacle.hidden = YES;
+    BottomObstacle.hidden = YES;
 }
 
 //Moving and regenerate the obstacles
@@ -33,16 +49,36 @@
     if (TopObstacle.center.x < -35){
         [self PlaceObstacle];
     }
+    
+    if (TopObstacle.center.x == 60){
+        [self Score];
+    }
+    
+    if (CGRectIntersectsRect(Saga.frame, TopObstacle.frame)){
+        [self GameOver];
+    }
+    
+    if (CGRectIntersectsRect(Saga.frame, BottomObstacle.frame)){
+        [self GameOver];
+    }
+    
+    if (CGRectIntersectsRect(Saga.frame, Top.frame)){
+        [self GameOver];
+    }
+    
+    if (CGRectIntersectsRect(Saga.frame, Bottom.frame)){
+        [self GameOver];
+    }
 }
 
 //Place the top and bottom obstacle in random position off the screen
 -(void)PlaceObstacle{
-    //Set top obstacle to random y position between -60 to -200
-    int lowerBound = -200;
-    int upperBound = -60;
+    //Set top obstacle to random y position between lowerBound and upperBound
+    int lowerBound = -40;
+    int upperBound = 50;
     RandomTopPos = lowerBound + arc4random() % (upperBound - lowerBound);
     
-    RandomBotPos = RandomTopPos + 90;
+    RandomBotPos = RandomTopPos + 80;
     
     TopObstacle.center = CGPointMake(570, RandomTopPos);
     BottomObstacle.center =CGPointMake(570, RandomBotPos);
@@ -76,6 +112,13 @@
 }
 
 - (void)viewDidLoad {
+    
+    TopObstacle.hidden = YES;
+    BottomObstacle.hidden = YES;
+    
+    Exit.hidden = YES;
+    ScoreNumber = 0;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }

@@ -67,10 +67,25 @@
                                 <rect key="frame" x="0.0" y="-178" width="568" height="498"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wukong.gif" translatesAutoresizingMaskIntoConstraints="NO" id="O4w-9r-LEb">
-                                <rect key="frame" x="44" y="122" width="58" height="76"/>
+                                <rect key="frame" x="77" y="122" width="58" height="76"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-pR-JH6">
+                                <rect key="frame" x="481" y="171" width="35" height="200"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-KD-Hzo">
+                                <rect key="frame" x="0.0" y="306" width="578" height="14"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uiz-B2-5d3">
+                                <rect key="frame" x="-5" y="6" width="578" height="27"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAE-wB-BLH">
+                                <rect key="frame" x="458" y="41" width="49" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvA-Wu-qWY">
-                                <rect key="frame" x="242" y="134" width="84" height="51"/>
+                                <rect key="frame" x="242" y="122" width="84" height="51"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Start!">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -80,17 +95,15 @@
                                     <action selector="Start:" destination="DeV-Pn-PIN" eventType="touchUpInside" id="sSV-MW-4ki"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-pR-JH6">
-                                <rect key="frame" x="533" y="78" width="35" height="255"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tit-KD-Hzo">
-                                <rect key="frame" x="0.0" y="306" width="578" height="14"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uiz-B2-5d3">
-                                <rect key="frame" x="-5" y="6" width="578" height="27"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-oJ-hKH">
+                                <rect key="frame" x="269" y="84" width="30" height="30"/>
+                                <state key="normal" title="Exit">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-P6-xx1">
-                                <rect key="frame" x="477" y="-70" width="35" height="255"/>
+                                <rect key="frame" x="60" y="-117" width="35" height="231"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,7 +112,9 @@
                     <connections>
                         <outlet property="Bottom" destination="Tit-KD-Hzo" id="5D8-Jg-6Sc"/>
                         <outlet property="BottomObstacle" destination="tFh-pR-JH6" id="WTu-6m-R8a"/>
+                        <outlet property="Exit" destination="Ofz-oJ-hKH" id="Qc9-LQ-vSl"/>
                         <outlet property="Saga" destination="O4w-9r-LEb" id="kQh-bS-qJD"/>
+                        <outlet property="ScoreLabel" destination="uAE-wB-BLH" id="1L4-8s-jiX"/>
                         <outlet property="Start" destination="fvA-Wu-qWY" id="gCS-JW-DiN"/>
                         <outlet property="Top" destination="uiz-B2-5d3" id="h8y-cE-rSN"/>
                         <outlet property="TopObstacle" destination="Xsf-P6-xx1" id="oQM-iq-sD1"/>
@@ -107,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qCx-gw-mus" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="580" y="112"/>
+            <point key="canvasLocation" x="575" y="112"/>
         </scene>
     </scenes>
     <resources>

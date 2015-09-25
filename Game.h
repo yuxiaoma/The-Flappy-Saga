@@ -11,6 +11,8 @@
 int SagaFlight;
 int RandomTopPos;
 int RandomBotPos;
+int ScoreNumber;
+NSInteger HighScoreNum;
 
 @interface Game : UIViewController
 {
@@ -20,6 +22,8 @@ int RandomBotPos;
     IBOutlet UIImageView *BottomObstacle;
     IBOutlet UIImageView *Top;
     IBOutlet UIImageView *Bottom;
+    IBOutlet UIButton *Exit;
+    IBOutlet UILabel *ScoreLabel;
     
     NSTimer *SagaMovement;
     NSTimer *ObstacleMovement;
@@ -29,5 +33,7 @@ int RandomBotPos;
 -(void)SagaMoving;
 -(void)ObstacleMoving;
 -(void)PlaceObstacle;
+-(void)Score;
+-(void)GameOver;
 
 @end

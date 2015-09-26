@@ -74,8 +74,8 @@
 //Place the top and bottom obstacle in random position off the screen
 -(void)PlaceObstacle{
     //Set top obstacle to random y position between lowerBound and upperBound
-    int lowerBound = -20;
-    int upperBound = 50;
+    int lowerBound = -100;
+    int upperBound = 100;
     RandomTopPos = lowerBound + arc4random() % (upperBound - lowerBound);
     
     RandomBotPos = RandomTopPos + 350;

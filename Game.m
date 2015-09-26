@@ -75,7 +75,7 @@
 -(void)PlaceObstacle{
     //Set top obstacle to random y position between lowerBound and upperBound
     int lowerBound = -100;
-    int upperBound = 100;
+    int upperBound = 80;
     RandomTopPos = lowerBound + arc4random() % (upperBound - lowerBound);
     
     RandomBotPos = RandomTopPos + 350;
@@ -90,7 +90,7 @@
     Saga.center = CGPointMake(Saga.center.x, Saga.center.y - SagaFlight);
     
     //Saga will move down in a constant rate of 5 pixel.
-    SagaFlight = SagaFlight - 2;
+    SagaFlight = SagaFlight - 3;
     
     if (SagaFlight < -15) {
         SagaFlight = -15;
@@ -102,7 +102,7 @@
     }
     //Saga is moving upward, show updown saga image
     if (SagaFlight < 0) {
-        Saga.image = [UIImage imageNamed:@"wukong.gif"];
+        Saga.image = [UIImage imageNamed:@"wukong2.gif"];
     }
     
 }

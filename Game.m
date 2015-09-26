@@ -29,7 +29,7 @@
 
 -(void)Score{
     ScoreNumber += 1;
-    ScoreLabel.text =[NSString stringWithFormat:@"%i", ScoreNumber];
+    ScoreLabel.text =[NSString stringWithFormat:@"Score: %i", ScoreNumber];
 }
 
 -(void)GameOver{
@@ -45,7 +45,22 @@
     TopObstacle.hidden = YES;
     BottomObstacle.hidden = YES;
     Saga.hidden = YES;
+    Background.hidden = YES;
+    Dead.hidden = NO;
+    GameOver.hidden = NO;
     
+}
+
+//Adjust the edge of RectBox
+- (UIImageView *)RectBox:(UIImageView *)box
+{
+    NSData *archive = [NSKeyedArchiver archivedDataWithRootObject:box];
+    UIImageView *copy = [NSKeyedUnarchiver unarchiveObjectWithData:archive];
+    copy.frame = CGRectMake(copy.frame.origin.x,
+                           copy.frame.origin.y + 10,
+                           copy.frame.size.width -20,
+                           copy.frame.size.height-30);
+    return copy;
 }
 
 //Moving and regenerate the obstacles
@@ -61,11 +76,11 @@
         [self Score];
     }
     
-    if (CGRectIntersectsRect(Saga.frame, TopObstacle.frame)){
+    if (CGRectIntersectsRect([self RectBox:Saga].frame, TopObstacle.frame)){
         [self GameOver];
     }
     
-    if (CGRectIntersectsRect(Saga.frame, BottomObstacle.frame)){
+    if (CGRectIntersectsRect([self RectBox:Saga].frame, BottomObstacle.frame)){
         [self GameOver];
     }
     
@@ -78,9 +93,7 @@
     int upperBound = 80;
     RandomTopPos = lowerBound + arc4random() % (upperBound - lowerBound);
     
-    RandomBotPos = RandomTopPos + 350;
-    printf("%i\n", RandomTopPos);
-    printf("%i\n", RandomBotPos);
+    RandomBotPos = RandomTopPos + 330;
     TopObstacle.center = CGPointMake(570, RandomTopPos);
     BottomObstacle.center =CGPointMake(570, RandomBotPos);
 }
@@ -89,7 +102,7 @@
     
     Saga.center = CGPointMake(Saga.center.x, Saga.center.y - SagaFlight);
     
-    //Saga will move down in a constant rate of 5 pixel.
+    //Saga will move down in a constant rate.
     SagaFlight = SagaFlight - 3;
     
     if (SagaFlight < -15) {
@@ -105,17 +118,25 @@
         Saga.image = [UIImage imageNamed:@"wukong2.gif"];
     }
     
+    if (Saga.center.y > 300){
+        Saga.center = CGPointMake(Saga.center.x, 300);
+    }
+    if (Saga.center.y < 5){
+        Saga.center = CGPointMake(Saga.center.x, 5);
+    }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     
-    SagaFlight = 10;
+    SagaFlight = 12;
 }
 
 - (void)viewDidLoad {
     
     TopObstacle.hidden = YES;
     BottomObstacle.hidden = YES;
+    Dead.hidden = YES;
+    GameOver.hidden = YES;
     
     Exit.hidden = YES;
     ScoreNumber = 0;

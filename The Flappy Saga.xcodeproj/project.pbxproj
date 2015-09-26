@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		115FB8891BB65E8B0078B3CD /* wukong1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115FB8881BB65E8B0078B3CD /* wukong1.jpg */; };
 		115FB88B1BB705880078B3CD /* wukong2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 115FB88A1BB705880078B3CD /* wukong2.gif */; };
+		115FB88D1BB71CF40078B3CD /* gameover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 115FB88C1BB71CF40078B3CD /* gameover.jpg */; };
+		115FB88F1BB720660078B3CD /* dead.gif in Resources */ = {isa = PBXBuildFile; fileRef = 115FB88E1BB720660078B3CD /* dead.gif */; };
 		11E9320F1BA0B88B006C523D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E9320E1BA0B88B006C523D /* main.m */; };
 		11E932121BA0B88B006C523D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E932111BA0B88B006C523D /* AppDelegate.m */; };
 		11E932151BA0B88B006C523D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E932141BA0B88B006C523D /* ViewController.m */; };
@@ -38,6 +40,8 @@
 /* Begin PBXFileReference section */
 		115FB8881BB65E8B0078B3CD /* wukong1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wukong1.jpg; sourceTree = "<group>"; };
 		115FB88A1BB705880078B3CD /* wukong2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wukong2.gif; sourceTree = "<group>"; };
+		115FB88C1BB71CF40078B3CD /* gameover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gameover.jpg; sourceTree = "<group>"; };
+		115FB88E1BB720660078B3CD /* dead.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dead.gif; sourceTree = "<group>"; };
 		11E932091BA0B88B006C523D /* The Flappy Saga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Flappy Saga.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11E9320D1BA0B88B006C523D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11E9320E1BA0B88B006C523D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -117,12 +121,14 @@
 		11E9320C1BA0B88B006C523D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				115FB88E1BB720660078B3CD /* dead.gif */,
 				115FB8881BB65E8B0078B3CD /* wukong1.jpg */,
 				11E932441BA21508006C523D /* obstacle.gif */,
 				115FB88A1BB705880078B3CD /* wukong2.gif */,
 				11E9323A1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png */,
 				11E9323C1BA0C3C5006C523D /* Dragonball-Tournament.gif */,
 				11E932381BA0C2E0006C523D /* bg3.png */,
+				115FB88C1BB71CF40078B3CD /* gameover.jpg */,
 				11E932361BA0C2DA006C523D /* Island.gif */,
 				11E932341BA0C297006C523D /* wukong.gif */,
 				11E9320D1BA0B88B006C523D /* Info.plist */,
@@ -229,12 +235,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				11E932391BA0C2E0006C523D /* bg3.png in Resources */,
+				115FB88D1BB71CF40078B3CD /* gameover.jpg in Resources */,
 				11E932351BA0C298006C523D /* wukong.gif in Resources */,
 				11E932371BA0C2DA006C523D /* Island.gif in Resources */,
 				11E932181BA0B88B006C523D /* Main.storyboard in Resources */,
 				11E9323B1BA0C377006C523D /* Screen Shot 2015-09-09 at 3.42.53 PM.png in Resources */,
 				115FB88B1BB705880078B3CD /* wukong2.gif in Resources */,
 				11E932451BA21508006C523D /* obstacle.gif in Resources */,
+				115FB88F1BB720660078B3CD /* dead.gif in Resources */,
 				11E9323D1BA0C3C5006C523D /* Dragonball-Tournament.gif in Resources */,
 				11E9321D1BA0B88B006C523D /* LaunchScreen.xib in Resources */,
 				115FB8891BB65E8B0078B3CD /* wukong1.jpg in Resources */,

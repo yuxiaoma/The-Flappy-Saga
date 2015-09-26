@@ -24,6 +24,9 @@ NSInteger HighScoreNum;
     IBOutlet UIImageView *Bottom;
     IBOutlet UIButton *Exit;
     IBOutlet UILabel *ScoreLabel;
+    IBOutlet UIImageView *Background;
+    IBOutlet UIImageView *Dead;
+    IBOutlet UILabel *GameOver;
     
     NSTimer *SagaMovement;
     NSTimer *ObstacleMovement;

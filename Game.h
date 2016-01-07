@@ -18,6 +18,7 @@ NSInteger HighScoreNum;
 {
     IBOutlet UIImageView *Saga;
     IBOutlet UIButton *Start;
+    IBOutlet UIButton *TryAgain;
     IBOutlet UIImageView *TopObstacle;
     IBOutlet UIImageView *BottomObstacle;
     IBOutlet UIImageView *Top;

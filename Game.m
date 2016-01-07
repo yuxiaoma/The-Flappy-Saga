@@ -41,6 +41,7 @@
     [ObstacleMovement invalidate];
     [SagaMovement invalidate];
     
+    TryAgain.hidden = NO;
     Exit.hidden = NO;
     TopObstacle.hidden = YES;
     BottomObstacle.hidden = YES;
@@ -57,9 +58,9 @@
     NSData *archive = [NSKeyedArchiver archivedDataWithRootObject:box];
     UIImageView *copy = [NSKeyedUnarchiver unarchiveObjectWithData:archive];
     copy.frame = CGRectMake(copy.frame.origin.x,
-                           copy.frame.origin.y + 10,
-                           copy.frame.size.width -20,
-                           copy.frame.size.height-30);
+                           copy.frame.origin.y + 15,
+                           copy.frame.size.width - 30,
+                           copy.frame.size.height - 20);
     return copy;
 }
 
@@ -118,8 +119,8 @@
         Saga.image = [UIImage imageNamed:@"wukong2.gif"];
     }
     
-    if (Saga.center.y > 300){
-        Saga.center = CGPointMake(Saga.center.x, 300);
+    if (Saga.center.y > 350){
+        [self GameOver];
     }
     if (Saga.center.y < 5){
         Saga.center = CGPointMake(Saga.center.x, 5);
@@ -138,6 +139,7 @@
     Dead.hidden = YES;
     GameOver.hidden = YES;
     
+    TryAgain.hidden = YES;
     Exit.hidden = YES;
     ScoreNumber = 0;
     

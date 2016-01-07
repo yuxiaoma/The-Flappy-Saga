@@ -58,9 +58,9 @@
     NSData *archive = [NSKeyedArchiver archivedDataWithRootObject:box];
     UIImageView *copy = [NSKeyedUnarchiver unarchiveObjectWithData:archive];
     copy.frame = CGRectMake(copy.frame.origin.x,
-                           copy.frame.origin.y + 15,
-                           copy.frame.size.width - 30,
-                           copy.frame.size.height - 20);
+                           copy.frame.origin.y + 12,
+                           copy.frame.size.width - 32,
+                           copy.frame.size.height - 23);
     return copy;
 }
 
@@ -104,7 +104,7 @@
     Saga.center = CGPointMake(Saga.center.x, Saga.center.y - SagaFlight);
     
     //Saga will move down in a constant rate.
-    SagaFlight = SagaFlight - 3;
+    SagaFlight = SagaFlight - 2.5;
     
     if (SagaFlight < -15) {
         SagaFlight = -15;

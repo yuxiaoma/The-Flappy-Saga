@@ -65,7 +65,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52.399999999999999" y="110.76000000000001"/>
+            <point key="canvasLocation" x="-52" y="110"/>
         </scene>
         <!--Game-->
         <scene sceneID="P8d-hp-qWZ">
@@ -79,8 +79,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Island.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-bc-axt">
-                                <rect key="frame" x="0.0" y="-157" width="601" height="526"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Island.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Ezh-bc-axt">
+                                <rect key="frame" x="0.0" y="-120" width="601" height="526"/>
                                 <animations/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="Xsf-P6-xx1">
@@ -106,7 +106,7 @@
                                     <action selector="Start:" destination="DeV-Pn-PIN" eventType="touchUpInside" id="sSV-MW-4ki"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-oJ-hKH">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-oJ-hKH">
                                 <rect key="frame" x="253" y="84" width="62" height="36"/>
                                 <animations/>
                                 <state key="normal" title="Exit">
@@ -118,22 +118,18 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="obstacle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="tFh-pR-JH6">
-                                <rect key="frame" x="481" y="198" width="35" height="200"/>
+                                <rect key="frame" x="481" y="213" width="35" height="200"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dead.gif" translatesAutoresizingMaskIntoConstraints="NO" id="KKr-uT-5QG">
-                                <rect key="frame" x="241" y="224" width="86" height="45"/>
-                                <animations/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWX-2y-7cw">
-                                <rect key="frame" x="146" y="78" width="276" height="138"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWX-2y-7cw">
+                                <rect key="frame" x="146" y="87" width="276" height="138"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="35"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-nD-eg0">
-                                <rect key="frame" x="230" y="185" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-nD-eg0">
+                                <rect key="frame" x="230" y="195" width="97" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Try Again">
@@ -148,9 +144,22 @@
                                 <rect key="frame" x="77" y="122" width="58" height="76"/>
                                 <animations/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="dead.gif" translatesAutoresizingMaskIntoConstraints="NO" id="KKr-uT-5QG">
+                                <rect key="frame" x="241" y="242" width="86" height="45"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Ofz-oJ-hKH" secondAttribute="centerX" id="8Rl-gX-8Ps"/>
+                            <constraint firstAttribute="centerX" secondItem="KKr-uT-5QG" secondAttribute="centerX" id="LoS-Vn-uuX"/>
+                            <constraint firstAttribute="height" secondItem="Ezh-bc-axt" secondAttribute="height" id="NI9-yO-vS7"/>
+                            <constraint firstAttribute="width" secondItem="Ezh-bc-axt" secondAttribute="width" id="Weg-Sy-JEn"/>
+                            <constraint firstAttribute="centerX" secondItem="oWX-2y-7cw" secondAttribute="centerX" id="kSh-DC-LwO"/>
+                            <constraint firstAttribute="centerY" secondItem="oWX-2y-7cw" secondAttribute="centerY" constant="4" id="ozz-mn-LBQ"/>
+                            <constraint firstAttribute="centerX" secondItem="jVg-nD-eg0" secondAttribute="centerX" constant="5.5" id="zrv-KU-arW"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>

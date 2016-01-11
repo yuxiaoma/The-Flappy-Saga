@@ -96,6 +96,7 @@
     
     RandomBotPos = RandomTopPos + 330;
     TopObstacle.center = CGPointMake(570, RandomTopPos);
+    //TopObstacle.frame = CGRectMake(, 0, <#CGFloat width#>, <#CGFloat height#>)
     BottomObstacle.center =CGPointMake(570, RandomBotPos);
 }
 
@@ -144,6 +145,8 @@
     ScoreNumber = 0;
     
     HighScoreNum = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
+    
+    Saga.translatesAutoresizingMaskIntoConstraints = YES;
     
     [super viewDidLoad];
     // Do any additional setup after loading the view.

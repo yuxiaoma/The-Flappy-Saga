@@ -18,7 +18,7 @@
     
     HighScoreNumView = [[NSUserDefaults standardUserDefaults] integerForKey:@"HighScoreSaved"];
     HighScore.text = [NSString stringWithFormat:@"High Score: %li", (long)HighScoreNumView];
-    
+
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }

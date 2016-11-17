@@ -27,14 +27,14 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Flappy Saga" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxz-IA-UQS" userLabel="TextContainer">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="The Flappy Saga" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kxz-IA-UQS" userLabel="TextContainer">
                                 <rect key="frame" x="137" y="50" width="295" height="48"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="highlightedColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqb-dV-Vwx">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqb-dV-Vwx">
                                 <rect key="frame" x="205" y="148" width="159" height="42"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -52,7 +52,6 @@
                         <constraints>
                             <constraint firstItem="Iqb-dV-Vwx" firstAttribute="top" secondItem="Kxz-IA-UQS" secondAttribute="bottom" constant="50" id="2Aq-5g-azO"/>
                             <constraint firstAttribute="centerX" secondItem="Iqb-dV-Vwx" secondAttribute="centerX" id="87A-ZF-hfV"/>
-                            <constraint firstItem="Kxz-IA-UQS" firstAttribute="top" secondItem="Rs4-Gf-Jt3" secondAttribute="bottom" constant="30" id="Wty-MS-B7e"/>
                             <constraint firstAttribute="centerX" secondItem="Kxz-IA-UQS" secondAttribute="centerX" id="mwx-bW-TpP"/>
                             <constraint firstAttribute="width" secondItem="9nQ-I3-Yqz" secondAttribute="width" id="wAe-ef-evD"/>
                             <constraint firstAttribute="height" secondItem="9nQ-I3-Yqz" secondAttribute="height" id="yqX-x3-tj8"/>
